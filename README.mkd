@@ -12,9 +12,8 @@ $ git clone https://github.com/kaneshin/git-twin.sh ~/.git-twin.sh
 
 ```
 # .shrc
-[[ -s "$HOME/.git-twin.sh/twin.sh" ]] && source ~/.git-twin.sh/twin.sh
-twin=`which _git_twin 2>&1`
-if [[ $? == 0 ]]; then
+if [[ -s "$HOME/.git-twin.sh/twin.sh" ]]; then
+    source ~/.git-twin.sh/twin.sh
     alias git-twin='_git_twin'
 fi
 ```
