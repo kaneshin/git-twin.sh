@@ -35,7 +35,7 @@ function _git_twin()
     git=`which git 2>&1`
     if [[ $? == 0 ]]; then
         if [[ $# = 2 ]]; then
-            git_twin $1 $2
+            git_twin_ $1 $2
         else
             echo 'usage: git twin <repository> <directory>'
         fi
