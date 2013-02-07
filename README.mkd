@@ -10,10 +10,19 @@ $ git clone https://github.com/kaneshin/git-twin.sh ~/.git-twin.sh
 
 ## Settings
 
-Add below line into your .bashrc/.zshrc (rc files)
+```
+# .shrc
+[[ -s "$HOME/.git-twin.sh/twin.sh" ]] && source ~/.git-twin.sh/twin.sh
+twin=`which _git_twin 2>&1`
+if [[ $? == 0 ]]; then
+    alias git-twin='_git_twin'
+fi
+```
 
 ```
-[[ -s "$HOME/.git-twin.sh/twin.sh" ]] && source ~/.git-twin.sh/twin.sh
+# .gitconfig
+[alias]
+	twin = !sh -c 'source ~/.git-twin.sh/twin.sh && _git_twin \"$0\" \"$1\"'
 ```
 
 
