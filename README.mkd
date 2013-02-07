@@ -1,0 +1,22 @@
+git-twin
+========
+
+## Clone
+
+```
+$ git clone https://github.com/kaneshin/git-twin.sh ~/.git-twin.sh
+```
+
+
+## Settings
+
+Add below line into your .bashrc/.zshrc (rc files)
+
+```
+[[ -s "$HOME/.git-twin.sh/twin.sh" ]] && source ~/.git-twin.sh/twin.sh
+```
+
+
+## Author
+
+Shintaro Kaneko <kaneshin0120@gmail.com>
