@@ -5,7 +5,7 @@
 # Maintainer:   Shintaro Kaneko <kaneshin0120@gmail.com>
 # Last Change:  08-Feb-2013.
 
-function git_twin()
+function git_twin_()
 {
     # make sure $2 is directory
     if [[ $2 == '' ]]; then
