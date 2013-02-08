@@ -1,16 +1,18 @@
 git-twin
 ========
 
-## Just do it!
-
-```
-$ ./install.sh
-```
-
 ## Clone
 
 ```
 $ git clone https://github.com/kaneshin/git-twin.sh ~/.git-twin.sh
+```
+
+
+## Just do it!
+
+```
+$ cd ~/.git-twin.sh
+$ ./install.sh
 ```
 
 
